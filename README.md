@@ -1,0 +1,1 @@
+manifest REPO for the vite-DevOps repo.

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vite-deployment
+spec:
+  replicas: 3 
+  selector:
+    matchLabels:
+      app: vite
+  template:
+    metadata:
+      labels:
+        app: vite
+    spec:
+      containers:
+        - name: vite
+          image: sapkotabraz/vite-devops:v1 
+          ports:
+            - containerPort: 80 
